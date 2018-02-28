@@ -1,0 +1,20 @@
+inline function is a different function type in C++ from C.
+
+/*example*/:
+inline int max(int a, int b)
+{
+	return a > b ? a : b;
+}
+
+We can usually use inline to define a short-cord and little effect function and it can enhance the efficiency of programming work.
+
+To tell the truth, the nature of inline function is that it unfold itself at the calling point so that the program don’t have to find the place where the function is defined.
+
+
+
+similarly, there’s also another way of realizing the function as inline functions: macro definition.
+
+/*example*/:
+#define max(a,b) (a)>(b)?(a):(b)
+
+Even though it is seemingly more concise than inline function, but it’s dangerous in many times.After all, it just realize the text-replacing which is also the root of error in many times.

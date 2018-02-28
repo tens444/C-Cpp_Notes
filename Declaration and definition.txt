@@ -1,0 +1,15 @@
+Declaration and definition are different ideas in C/C++.
+
+For any data, in principal, it experiences the course of definition, declaration and initialization.
+
+But in most times, declaration and definition appears at the same time.
+
+For example: int a; finishes both declaration(tells the compiler that an integer called a would be used) and definition(allocate relevant memory for it to save data).
+
+How can declaration separates from definition in sometimes? Here’re some situations.
+
+1)Function defined behind the calling should be declared before it.
+//form: void f(int x, int y)    (with no {})
+
+2)variables defined in other files should be extended to the current action scope.
+//form: extern int a;    (the datatype ‘int’ can be omitted)
